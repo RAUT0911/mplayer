@@ -1,0 +1,42 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="player">
+    <img id="albumArt" src="https://via.placeholder.com/300" alt="Album Art">
+    <h3 id="songTitle">Song Title</h3>
+    <p id="songArtist">Artist</p>
+
+    <div class="controls">
+      <button id="prevBtn">Prev</button>
+      <button id="playPauseBtn">Play</button>
+      <button id="nextBtn">Next</button>
+    </div>
+
+    <div class="progress">
+      <input type="range" id="progressBar" value="0" step="1" min="0">
+    </div>
+
+    <div class="volume">
+      <label for="volumeControl">Volume</label>
+      <input type="range" id="volumeControl" value="1" step="0.1" min="0" max="1">
+    </div>
+  </div>
+
+  <h3>Playlist</h3>
+  <ul id="playlist">
+    <li data-index="0">Adhyay 9 - Artist 1</li>
+    <li data-index="1">Adhyay 12 - Artist 2</li>
+    <li data-index="2">Adhyay 15 - Artist 3</li>
+  </ul>
+
+  <audio id="audioPlayer" src=""></audio>
+  <script src="script.js"></script>
+</body>
+</html>
